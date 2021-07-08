@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/github.io/Devsnest-React-THAs/static/css/main.48a464c9.chunk.css",
+    "main.js": "/github.io/Devsnest-React-THAs/static/js/main.6133477a.chunk.js",
+    "main.js.map": "/github.io/Devsnest-React-THAs/static/js/main.6133477a.chunk.js.map",
+    "runtime-main.js": "/github.io/Devsnest-React-THAs/static/js/runtime-main.ebe8ba37.js",
+    "runtime-main.js.map": "/github.io/Devsnest-React-THAs/static/js/runtime-main.ebe8ba37.js.map",
+    "static/js/2.58aa0228.chunk.js": "/github.io/Devsnest-React-THAs/static/js/2.58aa0228.chunk.js",
+    "static/js/2.58aa0228.chunk.js.map": "/github.io/Devsnest-React-THAs/static/js/2.58aa0228.chunk.js.map",
+    "index.html": "/github.io/Devsnest-React-THAs/index.html",
+    "static/css/main.48a464c9.chunk.css.map": "/github.io/Devsnest-React-THAs/static/css/main.48a464c9.chunk.css.map",
+    "static/js/2.58aa0228.chunk.js.LICENSE.txt": "/github.io/Devsnest-React-THAs/static/js/2.58aa0228.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebe8ba37.js",
+    "static/js/2.58aa0228.chunk.js",
+    "static/css/main.48a464c9.chunk.css",
+    "static/js/main.6133477a.chunk.js"
+  ]
+}
