@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.day17 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day17 h1 {
+  padding: 20px 0;
+}
+
+.day17 .instructions {
+  padding: 20px 0;
+}
+
+.day17 .instructions h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.day17 .card-container {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.day17 .card {
+  width: 90%;
+  background: #6b8e23;
+  padding: 5px 5px 26px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}

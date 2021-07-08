@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.day18 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.day18 .board {
+  display: flex;
+  border: 10px solid rgba(0, 0, 0, 0.8);
+}
+
+.day18 .box {
+  width: 25px;
+  height: 25px;
+}
+
+.day18 .row:nth-child(2n) .box:nth-child(2n),
+.day18 .row:nth-child(odd) .box:nth-child(odd) {
+  background-color: #000;
+}
+
+.day18 .calorie-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.day18 .calorie-app h1 {
+  padding: 20px 0;
+}
+
+.day18 .calorie-app .instructions {
+  padding: 20px 0;
+}
+
+.day18 .calorie-app .instructions h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.day18 .calorie-app .card-container {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.day18 .calorie-app .card {
+  width: 90%;
+  background: #6b8e23;
+  padding: 5px 5px 26px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
