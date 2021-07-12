@@ -1,3 +1,5 @@
+import Footer from "./footer/Footer";
+
 const Links = () => {
   return (
     <div
@@ -5,6 +7,7 @@ const Links = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        textAlign: "center",
       }}
     >
       <h1>Devsnest React THA's </h1>
@@ -13,6 +16,8 @@ const Links = () => {
         <a href="./#/day-17">Day 17</a>
         <a href="./#/day-18">Day 18</a>
         <a href="./#/day-19">Day 19</a>
+        <a href="./#/day-20">Day 20</a>
+        <Footer />
       </div>
     </div>
   );

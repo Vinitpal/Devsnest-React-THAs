@@ -1,7 +1,8 @@
+import Footer from "../footer/Footer";
 import Button from "./Button";
 import "./day19-style.css";
 
-const App = () => {
+const Day19 = () => {
   const n = [1, 2, 3, 4];
 
   return (
@@ -15,8 +16,9 @@ const App = () => {
           <Button key={i} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default App;
+export default Day19;

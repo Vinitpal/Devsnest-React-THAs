@@ -1,11 +1,10 @@
 import CardContainer from "./CardContainer";
-import "./day17-style.css";
-import Footer from "../footer/Footer";
 import Header from "./Header";
+import Footer from "../footer/Footer";
 
-const Day17 = () => {
+const CalorieApp = () => {
   return (
-    <div className="day17">
+    <div className="calorie-app">
       <Header />
       <CardContainer />
       <Footer />
@@ -13,4 +12,4 @@ const Day17 = () => {
   );
 };
 
-export default Day17;
+export default CalorieApp;

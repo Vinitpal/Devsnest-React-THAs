@@ -1,8 +1,8 @@
 const Card = ({ food, calorie }) => {
   return (
     <div className="card">
-      <h1>{food}</h1>
-      <h2>you have consumed {calorie} cals today</h2>
+      <h3>{food}</h3>
+      <h4>you have consumed {calorie} cals today</h4>
     </div>
   );
 };

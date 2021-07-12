@@ -1,11 +1,10 @@
 import CardContainer from "./CardContainer";
-import Instructions from "./Instructions";
+import Header from "./Header";
 
 const CalorieApp = () => {
   return (
     <div className="calorie-app">
-      <Instructions />
-      <h1>Calorie Read Only</h1>
+      <Header />
       <CardContainer />
     </div>
   );

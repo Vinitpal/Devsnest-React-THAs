@@ -2,14 +2,18 @@ import Chess from "./chess-2/ChessBoard";
 import CaloreiApp from "./calorieApp-2/CalorieApp";
 
 import "./day18-style.css";
+import Footer from "../footer/Footer";
 
-const day18 = () => {
+const Day18 = () => {
   return (
-    <div className="day18">
-      <Chess />
-      <CaloreiApp />
+    <div>
+      <div className="day18">
+        <Chess />
+        <CaloreiApp />
+      </div>
+      <Footer />
     </div>
   );
 };
 
-export default day18;
+export default Day18;

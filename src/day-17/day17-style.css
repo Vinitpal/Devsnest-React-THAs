@@ -11,23 +11,24 @@
   align-items: center;
 }
 
-.day17 h1 {
+.day17 .header {
   padding: 20px 0;
+  position: relative;
+  background-color: #330000;
+  width: 100%;
+  top: 0;
 }
 
-.day17 .instructions {
-  padding: 20px 0;
-}
-
-.day17 .instructions h1 {
+.day17 .header h2 {
+  padding: 0;
+  color: #6b8e23;
   text-align: center;
-  padding-bottom: 1rem;
 }
 
 .day17 .card-container {
   padding: 10px;
-  margin-bottom: 20px;
-  width: 500px;
+  margin: 32px 0;
+  width: 600px;
   height: 400px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -36,9 +37,15 @@
 
 .day17 .card {
   width: 90%;
+  display: flex;
+  flex-direction: column;
   background: #6b8e23;
-  padding: 5px 5px 26px;
-  margin: 0.5rem;
+  padding: 5px 10px 0;
+  margin: 1rem;
   border-radius: 5px;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.day17 .card h4 {
+  margin: 5px 0;
 }
