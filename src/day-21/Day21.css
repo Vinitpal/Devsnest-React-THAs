@@ -1,13 +1,14 @@
-.day20 .calorie-app {
+.day21 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100vh;
+  align-items: center;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 
-.day20 .header {
+.day21 .header {
   padding: 10px 0;
   position: relative;
   background-color: #330000;
@@ -15,13 +16,13 @@
   top: 0;
 }
 
-.day20 .header h2 {
+.day21 .header h2 {
   padding: 0;
   color: #6b8e23;
   text-align: center;
 }
 
-.day20 .calorie-app .card-container {
+.day21 .calorie-container {
   padding: 10px;
   width: 600px;
   height: 400px;
@@ -30,21 +31,44 @@
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-.day20 .calorie-app .card-wrapper {
+.day21 .add-calorie {
+  margin: 1.3rem 0;
+}
+
+.day21 .add-calorie .input {
+  margin: 0 1rem;
+}
+
+.day21 .edit-calorie form {
+  display: flex;
+  align-items: center;
+}
+
+.day21 .edit-calorie .input {
+  width: 150px;
+  margin: 1rem;
+}
+
+.day21 .edit-calorie button {
+  padding: 5px 0px;
+  margin: 10px;
+}
+
+.day21 .card-wrapper {
   display: flex;
   margin: 1rem;
   border-radius: 5px;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.3), -1px -2px 7px rgba(0, 0, 0, 0.3);
 }
 
-.day20 .calorie-app .box {
+.day21 .box {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   height: auto;
   width: 70px;
 }
 
-.day20 .calorie-app .card {
+.day21 .card {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -52,14 +76,13 @@
   position: relative;
 }
 
-.day20 .calorie-app .card h4 {
+.day21 .card h4 {
   margin: 5px 0 0;
 }
 
-.day20 .calorie-app .card button {
+.day21 .card .del-btn,
+.day21 .card .edit-btn {
   position: absolute;
-  right: 0;
-  top: 50%;
   transform: translate(-50%, -50%);
   padding: 5px 10px;
   font-size: 1.2rem;
@@ -69,6 +92,20 @@
   cursor: pointer;
 }
 
-.day20 .calorie-app .card button:hover {
+.day21 .card .del-btn {
+  right: 0;
+  top: 50%;
+}
+
+.day21 .card .edit-btn {
+  right: 10%;
+  top: 50%;
+}
+
+.day21 .card .del-btn:hover {
   color: red;
+}
+
+.day21 .card .edit-btn:hover {
+  color: blue;
 }

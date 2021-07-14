@@ -33,6 +33,7 @@ const CardContainer = (props) => {
     },
   ];
 
+  // console.log(useState);
   let [foods, setFood] = useState(arr);
 
   // console.log(foods, setFood);
@@ -44,15 +45,19 @@ const CardContainer = (props) => {
 
   return (
     <div className="card-container">
-      {foods.length > 0 ? foods.map((item, idx) => (
-        <Card
-          key={idx}
-          food={item.food}
-          onDelete={deleteTask}
-          calorie={item.calorie}
-          id={idx}
-        />
-      )) : <h1 style={{textAlign:"center"}}>No entry</h1>}
+      {foods.length > 0 ? (
+        foods.map((item, idx) => (
+          <Card
+            key={idx}
+            food={item.food}
+            onDelete={deleteTask}
+            calorie={item.calorie}
+            id={idx}
+          />
+        ))
+      ) : (
+        <h1 style={{ textAlign: "center" }}>No entry</h1>
+      )}
     </div>
   );
 };
