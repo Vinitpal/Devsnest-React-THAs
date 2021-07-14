@@ -26,7 +26,7 @@ const CardWrapper = ({ food, calorie, onDelete, onEdit, id }) => {
       ) : (
         <Card
           food={food}
-          currCalorie={calorie}
+          calorie={calorie}
           id={id}
           COLOR={COLOR_CONDITION}
           onDelete={onDelete}

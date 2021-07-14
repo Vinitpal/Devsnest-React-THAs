@@ -18,6 +18,7 @@ const Links = () => {
         <a href="./#/day-19">Day 19</a>
         <a href="./#/day-20">Day 20</a>
         <a href="./#/day-21">Day 21</a>
+        <a href="./#/day-22">Day 22</a>
         <Footer />
       </div>
     </div>
