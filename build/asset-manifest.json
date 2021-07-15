@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Devsnest-React-THAs/build/static/css/main.c321c538.chunk.css",
-    "main.js": "/Devsnest-React-THAs/build/static/js/main.fbe451fd.chunk.js",
-    "main.js.map": "/Devsnest-React-THAs/build/static/js/main.fbe451fd.chunk.js.map",
+    "main.css": "/Devsnest-React-THAs/build/static/css/main.789021c0.chunk.css",
+    "main.js": "/Devsnest-React-THAs/build/static/js/main.f330c010.chunk.js",
+    "main.js.map": "/Devsnest-React-THAs/build/static/js/main.f330c010.chunk.js.map",
     "runtime-main.js": "/Devsnest-React-THAs/build/static/js/runtime-main.8252cdd5.js",
     "runtime-main.js.map": "/Devsnest-React-THAs/build/static/js/runtime-main.8252cdd5.js.map",
-    "static/js/2.c7a8ffe3.chunk.js": "/Devsnest-React-THAs/build/static/js/2.c7a8ffe3.chunk.js",
-    "static/js/2.c7a8ffe3.chunk.js.map": "/Devsnest-React-THAs/build/static/js/2.c7a8ffe3.chunk.js.map",
+    "static/js/2.3a7fe12f.chunk.js": "/Devsnest-React-THAs/build/static/js/2.3a7fe12f.chunk.js",
+    "static/js/2.3a7fe12f.chunk.js.map": "/Devsnest-React-THAs/build/static/js/2.3a7fe12f.chunk.js.map",
     "index.html": "/Devsnest-React-THAs/build/index.html",
-    "static/css/main.c321c538.chunk.css.map": "/Devsnest-React-THAs/build/static/css/main.c321c538.chunk.css.map",
-    "static/js/2.c7a8ffe3.chunk.js.LICENSE.txt": "/Devsnest-React-THAs/build/static/js/2.c7a8ffe3.chunk.js.LICENSE.txt"
+    "static/css/main.789021c0.chunk.css.map": "/Devsnest-React-THAs/build/static/css/main.789021c0.chunk.css.map",
+    "static/js/2.3a7fe12f.chunk.js.LICENSE.txt": "/Devsnest-React-THAs/build/static/js/2.3a7fe12f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8252cdd5.js",
-    "static/js/2.c7a8ffe3.chunk.js",
-    "static/css/main.c321c538.chunk.css",
-    "static/js/main.fbe451fd.chunk.js"
+    "static/js/2.3a7fe12f.chunk.js",
+    "static/css/main.789021c0.chunk.css",
+    "static/js/main.f330c010.chunk.js"
   ]
 }
