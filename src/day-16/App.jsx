@@ -5,9 +5,11 @@ import "./day16-style.css";
 
 const Day16 = () => {
   return (
-    <div className="day16">
-      <Card />
-      <Chess />
+    <div>
+      <div className="day16">
+        <Card />
+        <Chess />
+      </div>
       <Footer />
     </div>
   );
