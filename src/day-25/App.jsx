@@ -33,7 +33,7 @@ const Day25 = () => {
         <Switch>
           <AuthContext>
             <Route exact path="/day-25" component={Home} />
-            <Route path="/day-25/about" component={About} />
+            <Route exact path="/day-25/about" component={About} />
             <Route exact path="/day-25/dashboard" component={Dashboard} />
             <Route exact path="/day-25/profile" component={Profile} />
           </AuthContext>
