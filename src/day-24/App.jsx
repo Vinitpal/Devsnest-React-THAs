@@ -5,6 +5,7 @@ import Home from "./router/Home";
 import About from "./router/About";
 import Dashboard from "./router/Dashboard";
 import Profile from "./router/Profile";
+
 import { AuthContext } from "./Context/AuthContext";
 
 const Day24 = () => {
@@ -27,6 +28,7 @@ const Day24 = () => {
             </li>
           </ul>
         </nav>
+
         <Switch>
           <AuthContext>
             <Route exact path="/day-24" component={Home} />

@@ -11,6 +11,9 @@
 
 .day18 .board {
   display: flex;
+  width: 220px;
+  flex-direction: column;
+  align-items: center;
   border: 10px solid rgba(0, 0, 0, 0.8);
 }
 

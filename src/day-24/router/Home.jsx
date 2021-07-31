@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import Context from "../Context/AuthContext";
 
+import Footer from "../../footer/Footer";
+
 const Home = () => {
   const logger = useContext(Context);
 
@@ -22,6 +24,7 @@ const Home = () => {
         )
         // <button onClick={logger.toggleLogin}>{logger.loggedIn ? "Logout" : "Login"}</button>
       }
+      <Footer />
     </div>
   );
 };

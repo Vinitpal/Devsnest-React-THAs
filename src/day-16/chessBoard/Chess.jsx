@@ -9,6 +9,8 @@ const Chess = () => {
       <Row />
       <Row />
       <Row />
+      <Row />
+      <Row />
     </div>
   );
 };
