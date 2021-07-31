@@ -22,6 +22,7 @@ const AddTodo = () => {
               addItem({
                 title: item,
                 done: false,
+                editing: false,
               })
             );
           }

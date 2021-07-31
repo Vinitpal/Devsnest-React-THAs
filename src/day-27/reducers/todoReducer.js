@@ -7,7 +7,14 @@ const todoReducer = (state = [], action) => {
       return state.filter((item, index) => index !== action.payload);
 
     case "UPDATE_ITEM":
-      return state.filter((item, index) => index !== action.payload);
+      // console.log(action.payload);
+      console.log(state);
+      let newState = [...state];
+
+      newState[action.payload.index].title = action.payload.nTitle;
+      newState[action.payload.index].editing = false;
+
+      return newState;
 
     case "CLEAR_LIST":
       return [];

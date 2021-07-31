@@ -38,4 +38,4 @@ const loadTodo = () => {
   };
 };
 
-export { addItem, removeItem, clearList, loadTodo };
+export { addItem, removeItem, updateItem, clearList, loadTodo };

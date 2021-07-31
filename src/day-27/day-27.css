@@ -25,16 +25,27 @@
   height: 280px;
   overflow-y: auto;
   margin: 1rem auto 0;
-  padding: 20px;
+  padding: 1rem 2rem;
   border-radius: 21px;
   background-color: #2940d3;
 }
 
 .day27 .todolist__item {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 0;
   align-items: center;
   justify-content: space-between;
+}
+
+.day27 .edit__component {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day27 .edit__input__container {
+  width: 50%;
 }
 
 .day27 .todolist__item h5 {
