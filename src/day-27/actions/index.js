@@ -5,6 +5,13 @@ const addItem = (item) => {
   };
 };
 
+const itemDone = (item) => {
+  return {
+    type: "ITEM_DONE",
+    payload: item,
+  };
+};
+
 const removeItem = (item) => {
   return {
     type: "REMOVE_ITEM",
@@ -38,4 +45,4 @@ const loadTodo = () => {
   };
 };
 
-export { addItem, removeItem, updateItem, clearList, loadTodo };
+export { addItem, itemDone, removeItem, updateItem, clearList, loadTodo };

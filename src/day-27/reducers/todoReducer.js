@@ -3,6 +3,11 @@ const todoReducer = (state = [], action) => {
     case "ADD_ITEM":
       return [...state, action.payload];
 
+    case "ITEM_DONE":
+      let completeState = [...state];
+      completeState[action.payload].done = true;
+      return completeState;
+
     case "REMOVE_ITEM":
       return state.filter((item, index) => index !== action.payload);
 

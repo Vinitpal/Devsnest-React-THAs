@@ -18,21 +18,32 @@ const Edit = ({ setIsEditing, index }) => {
           }}
         />
       </div>
-      <button
-        onClick={() => {
-          if (newTitle.length > 0) {
+      <div className="edit__button__container">
+        <button
+          style={{ color: "#0f0" }}
+          onClick={() => {
+            if (newTitle.length > 0) {
+              setIsEditing(false);
+              dispatch(
+                updateItem({
+                  index: index,
+                  nTitle: newTitle,
+                })
+              );
+            }
+          }}
+        >
+          Done
+        </button>
+        <button
+          style={{ color: "salmon" }}
+          onClick={() => {
             setIsEditing(false);
-            dispatch(
-              updateItem({
-                index: index,
-                nTitle: newTitle,
-              })
-            );
-          }
-        }}
-      >
-        Done
-      </button>
+          }}
+        >
+          Cancel
+        </button>
+      </div>
     </div>
   );
 };
