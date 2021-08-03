@@ -1,0 +1,69 @@
+.day28 {
+  text-align: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+.day28 .form {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.day28 .form input {
+  padding: 0 10px;
+}
+
+.day28 .form button {
+  margin: 0 10px;
+}
+
+.day28 .weather {
+  text-align: center;
+}
+
+.day28 .card {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 2) 0px 20px 30px 0px;
+}
+
+.day28 .card img {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.day28 .card .place {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 10px 0;
+}
+
+.day28 .card .desc {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.day28 .card .temp {
+  font-size: 4rem;
+  margin-left: 24.39px;
+  font-weight: 600;
+}
+
+.day28 .card .whp,
+.title {
+  font-size: 0.8rem;
+}
+
+.day28 .card .whp,
+.data {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.day28 .card .whp,
+.data .unit {
+  font-size: 0.8rem;
+}

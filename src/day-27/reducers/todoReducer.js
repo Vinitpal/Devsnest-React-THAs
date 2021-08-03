@@ -9,11 +9,11 @@ const todoReducer = (state = [], action) => {
       return completeState;
 
     case "REMOVE_ITEM":
+      console.log(state);
       return state.filter((item, index) => index !== action.payload);
 
     case "UPDATE_ITEM":
       // console.log(action.payload);
-      console.log(state);
       let newState = [...state];
 
       newState[action.payload.index].title = action.payload.nTitle;
