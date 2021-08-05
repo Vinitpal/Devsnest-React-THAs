@@ -16,6 +16,7 @@ const ToggleTheme = () => {
         }}
       >
         <i className="fa fa-adjust" />
+        {theme ? " Light" : " Dark"}
       </button>
     </div>
   );

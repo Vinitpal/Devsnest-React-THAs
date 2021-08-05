@@ -20,7 +20,7 @@ const WeatherContainer = () => {
                     <div className="col-4">
                       <div className="title">Wind now</div>
                       <div className="data">
-                        {placeData.current.wind_kph}{" "}
+                        {placeData.current.wind_kph}
                         <span className="unit">KM</span>
                       </div>
                     </div>
@@ -28,7 +28,7 @@ const WeatherContainer = () => {
                     <div className="col-4">
                       <div className="title">Humidity</div>
                       <div className="data">
-                        {placeData.current.humidity}{" "}
+                        {placeData.current.humidity}
                         <span className="unit">%</span>
                       </div>
                     </div>
@@ -36,7 +36,7 @@ const WeatherContainer = () => {
                     <div className="col-4">
                       <div className="title">Percipitation</div>
                       <div className="data">
-                        {placeData.current.precip_in}{" "}
+                        {placeData.current.precip_in}
                         <span className="unit">%</span>
                       </div>
                     </div>

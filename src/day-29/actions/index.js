@@ -11,12 +11,13 @@ const updatePlaceData = (place) => {
       `https://api.weatherapi.com/v1/current.json?key=3a81ceec694b4589a6791432212707&q=${place}`
     )
       .then((res) => res.json())
-      .then((data) =>
+      .then((data) => {
+        console.log(data);
         dispatch({
           type: "UPDATE_PLACE_DATA",
           payload: data,
-        })
-      );
+        });
+      });
   };
 };
 
