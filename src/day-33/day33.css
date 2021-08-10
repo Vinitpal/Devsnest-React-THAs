@@ -1,0 +1,27 @@
+.day33 {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.day33:after {
+  content: "";
+  height: 100vh;
+}
+
+.day33 .toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+}
+
+.day33 .toggle-theme:focus {
+  box-shadow: 0 0 0.1rem 0.25rem rgb(66 70 73 / 50%);
+}
+
+.day33 .completed {
+  text-decoration: line-through;
+  font-weight: normal;
+}
