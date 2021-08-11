@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 
 import Todos from "./components/Todos";
 import ToggleTheme from "./components/ToggleTheme";
@@ -17,7 +16,6 @@ const Day33 = () => {
   const [theme, setTheme] = useState<boolean>(false);
   const [todos, setTodos] = useState<TodoType[]>([]);
 
-  const done = false;
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <TodoContext.Provider value={{ todos, setTodos }}>

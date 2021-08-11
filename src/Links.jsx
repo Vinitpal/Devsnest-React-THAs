@@ -29,6 +29,7 @@ const Links = () => {
         <Link to="./day-29">Day 29</Link>
         <Link to="./day-30">Day 30</Link>
         <Link to="./day-33">Day 33</Link>
+        <Link to="./day-34">Day 34</Link>
         <Footer />
       </div>
     </div>
