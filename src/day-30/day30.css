@@ -1,4 +1,13 @@
 .day30 {
-  height: 100vh;
+  height: 100%;
   color: #aaa;
+}
+
+.day30:after {
+  content: "";
+  height: 100vh;
+}
+
+.day30 a {
+  text-decoration: none !important;
 }

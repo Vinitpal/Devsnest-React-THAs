@@ -1,10 +1,10 @@
 interface addNoteType {
-  type: string;
+  type: "ADD_NOTE";
   payload: string;
 }
 
 interface deleteNoteType {
-  type: string;
+  type: "DELETE_NOTE";
   payload: number;
 }
 
