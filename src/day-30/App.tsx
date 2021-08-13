@@ -15,8 +15,8 @@ const Day30 = () => {
         {/* Drawer Component - TODO*/}
         {/* <TemporaryDrawer /> */}
         <Switch>
-          <Route path="/day-30" component={ProductListing} />
           <Route exact path="/day-30/:id" component={ProductDetails} />
+          <Route exact path="/day-30" component={ProductListing} />
         </Switch>
       </Router>
     </div>
