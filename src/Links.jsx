@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const Links = () => {
   return (
     <div
+      className="bg-dark text-light"
       style={{
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -30,6 +32,7 @@ const Links = () => {
         <Link to="./day-30">Day 30</Link>
         <Link to="./day-33">Day 33</Link>
         <Link to="./day-34">Day 34</Link>
+        <Link to="./day-35">Day 35</Link>
         <Footer />
       </div>
     </div>

@@ -18,29 +18,31 @@ import Day29 from "./day-29/App";
 import Day30 from "./day-30/App";
 import Day33 from "./day-33/App";
 import Day34 from "./day-34/App";
+import Day35 from "./day-35/App";
 import Links from "./Links";
 
 const App = () => {
   return (
     <>
       <Switch>
-        <Route path="/day-16" component={Day16} />
-        <Route path="/day-17" component={Day17} />
-        <Route path="/day-18" component={Day18} />
-        <Route path="/day-19" component={Day19} />
-        <Route path="/day-20" component={Day20} />
-        <Route path="/day-21" component={Day21} />
-        <Route path="/day-22" component={Day22} />
-        <Route path="/day-23" component={Day23} />
-        <Route path="/day-24" component={Day24} />
-        <Route path="/day-25" component={Day25} />
-        <Route path="/day-26" component={Day26} />
-        <Route path="/day-27" component={Day27} />
-        <Route path="/day-28" component={Day28} />
-        <Route path="/day-29" component={Day29} />
-        <Route path="/day-30" component={Day30} />
-        <Route path="/day-33" component={Day33} />
-        <Route path="/day-34" component={Day34} />
+        <Route exact path="/day-16" component={Day16} />
+        <Route exact path="/day-17" component={Day17} />
+        <Route exact path="/day-18" component={Day18} />
+        <Route exact path="/day-19" component={Day19} />
+        <Route exact path="/day-20" component={Day20} />
+        <Route exact path="/day-21" component={Day21} />
+        <Route exact path="/day-22" component={Day22} />
+        <Route exact path="/day-23" component={Day23} />
+        <Route exact path="/day-24" component={Day24} />
+        <Route exact path="/day-25" component={Day25} />
+        <Route exact path="/day-26" component={Day26} />
+        <Route exact path="/day-27" component={Day27} />
+        <Route exact path="/day-28" component={Day28} />
+        <Route exact path="/day-29" component={Day29} />
+        <Route exact path="/day-30" component={Day30} />
+        <Route exact path="/day-33" component={Day33} />
+        <Route exact path="/day-34" component={Day34} />
+        <Route exact path="/day-35" component={Day35} />
         <Route exact path="/" component={Links} />
       </Switch>
     </>
