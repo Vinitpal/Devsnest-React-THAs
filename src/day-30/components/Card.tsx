@@ -9,7 +9,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 
 interface Props {
   price: number;
-  description: string;
   id: number;
   image: string;
   title: string;
@@ -19,9 +18,13 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
   },
+  media: {
+    height: 240,
+    objectFit: "contain",
+  },
 });
 
-const CardComponent = ({ title, id, price, description, image }: Props) => {
+const CardComponent = ({ title, id, price, image }: Props) => {
   const classes = useStyles();
 
   return (
@@ -30,9 +33,11 @@ const CardComponent = ({ title, id, price, description, image }: Props) => {
       style={{ marginTop: "2rem", backgroundColor: "#424242" }}
     >
       {/* Link  */}
+
       <Link to={`/day-30/${id}`}>
         <CardActionArea style={{ color: "#fff" }}>
           <CardMedia
+            className={classes.media}
             component="img"
             alt="Contemplative Reptile"
             height="140"
@@ -40,8 +45,8 @@ const CardComponent = ({ title, id, price, description, image }: Props) => {
             title={title}
           />
           <CardContent>
-            <h5>{description}</h5>
-            <p className="mb-0">Price: ₹ {price}</p>
+            <h5>{title.slice(0, 20) + "..."}</h5>
+            <p className="mb-0">Price: ₹ {price * 1000}</p>
           </CardContent>
         </CardActionArea>
       </Link>

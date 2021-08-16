@@ -43,6 +43,7 @@ const App = () => {
         <Route exact path="/day-33" component={Day33} />
         <Route exact path="/day-34" component={Day34} />
         <Route exact path="/day-35" component={Day35} />
+
         <Route exact path="/" component={Links} />
       </Switch>
     </>

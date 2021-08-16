@@ -29,6 +29,7 @@ const Day35Comp = () => {
     fetch(process.env.PUBLIC_URL + "/data/post.json")
       .then((res) => res.json())
       .then((data) => setPosts(data));
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
