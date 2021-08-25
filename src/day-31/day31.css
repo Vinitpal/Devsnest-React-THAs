@@ -1,0 +1,10 @@
+.day31 {
+  height: 100vh;
+  text-align: center;
+  padding: 0px 120px;
+}
+
+.day31 .link {
+  margin-top: 1rem;
+  font-size: 28px;
+}

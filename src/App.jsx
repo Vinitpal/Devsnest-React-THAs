@@ -16,6 +16,7 @@ import Day27 from "./day-27/App";
 import Day28 from "./day-28/App";
 import Day29 from "./day-29/App";
 import Day30 from "./day-30/App";
+import Day31 from "./day-31/App";
 import Day33 from "./day-33/App";
 import Day34 from "./day-34/App";
 import Day35 from "./day-35/App";
@@ -40,6 +41,7 @@ const App = () => {
         <Route exact path="/day-28" component={Day28} />
         <Route exact path="/day-29" component={Day29} />
         <Route exact path="/day-30" component={Day30} />
+        <Route exact path="/day-31" component={Day31} />
         <Route exact path="/day-33" component={Day33} />
         <Route exact path="/day-34" component={Day34} />
         <Route exact path="/day-35" component={Day35} />
