@@ -4,15 +4,17 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import { RiShoppingCartFill } from "react-icons/ri";
+import CloseIcon from "@material-ui/icons/Close";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteCartItem } from "../../actions";
 
 type Anchor = "right";
 
 export default function TemporaryDrawer() {
+  const cartArr = useSelector((state: any) => state.cart);
   const [state, setState] = useState({ right: false });
+  const dispatch = useDispatch();
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -28,29 +30,41 @@ export default function TemporaryDrawer() {
     };
 
   const list = (anchor: Anchor) => (
-    <div
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
+    <div role="presentation" style={{ margin: "50px", width: "auto" }}>
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+        {cartArr.map((cartItem: any) => (
+          <ListItem
+            button
+            key={cartItem.id}
+            style={{
+              display: "flex",
+            }}
+          >
+            <div className="d-flex ">
+              <img
+                style={{
+                  margin: "20px",
+                }}
+                src={cartItem.image}
+                alt={cartItem.title}
+                width="140px"
+                height="150px"
+              />
+              <div style={{ width: "150px" }}>
+                <h5 className="mt-4">{cartItem.title}</h5>
+                <p>${cartItem.price * 1000}</p>
+                <div
+                  className="btn btn-danger"
+                  onClick={() => {
+                    console.log("works");
+                    dispatch(deleteCartItem(cartItem.id));
+                  }}
+                >
+                  Remove
+                </div>
+              </div>
+            </div>
+            <Divider />
           </ListItem>
         ))}
       </List>
@@ -61,12 +75,27 @@ export default function TemporaryDrawer() {
     <div>
       {(["right"] as Anchor[]).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button
+            style={{ fontSize: "1.5em", color: "#fff" }}
+            onClick={toggleDrawer(anchor, true)}
+          >
+            <RiShoppingCartFill />
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
           >
+            <CloseIcon
+              onClick={toggleDrawer(anchor, false)}
+              onKeyDown={toggleDrawer(anchor, false)}
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "10px",
+                cursor: "pointer",
+              }}
+            />
             {list(anchor)}
           </Drawer>
         </React.Fragment>

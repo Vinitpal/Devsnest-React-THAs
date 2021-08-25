@@ -1,7 +1,7 @@
 import React from "react";
-import { RiShoppingCartFill } from "react-icons/ri";
 
 import { Link } from "react-router-dom";
+import TemporaryDrawer from "./Drawer";
 
 const NavBar = () => {
   return (
@@ -12,11 +12,8 @@ const NavBar = () => {
       </Link>
 
       {/* On click -> show Cart Drawer */}
-      <button
-        className="btn btn-outline-primary btn-sm"
-        style={{ fontSize: "1.5em" }}
-      >
-        <RiShoppingCartFill />
+      <button className="btn btn-outline-primary btn-sm">
+        <TemporaryDrawer />
       </button>
     </div>
   );

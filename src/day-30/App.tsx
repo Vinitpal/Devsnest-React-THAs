@@ -4,7 +4,6 @@ import ProductListing from "./components/screens/ProductListing";
 import ProductDetails from "./components/screens/ProductDetails";
 // Layout
 import NavBar from "./components/layout/NavBar";
-// import TemporaryDrawer from "./components/layout/Drawer";
 
 // store
 import store from "./store";
@@ -21,8 +20,7 @@ const Day30 = () => {
       <Provider store={store}>
         <div className="bg-dark day30">
           <NavBar />
-          {/* Drawer Component - TODO*/}
-          {/* <TemporaryDrawer /> */}
+          {/* Drawer Component - TODO */}
 
           <Switch>
             <Route exact path="/day-30/:id" component={ProductDetails} />

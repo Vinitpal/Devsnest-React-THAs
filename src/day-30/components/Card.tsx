@@ -6,6 +6,8 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../actions";
 
 interface Props {
   price: number;
@@ -26,6 +28,7 @@ const useStyles = makeStyles({
 
 const CardComponent = ({ title, id, price, image }: Props) => {
   const classes = useStyles();
+  const dispatch = useDispatch();
 
   return (
     <Card
@@ -55,7 +58,19 @@ const CardComponent = ({ title, id, price, image }: Props) => {
         <button className="btn btn-outline-primary btn-sm mx-2 mb-2">
           Buy Now
         </button>
-        <button className="btn btn-outline-primary btn-sm mx-2 mb-2">
+        <button
+          className="btn btn-outline-primary btn-sm mx-2 mb-2"
+          onClick={() => {
+            dispatch(
+              addToCart({
+                id: id,
+                title: title,
+                price: price,
+                image: image,
+              })
+            );
+          }}
+        >
           Add to cart
         </button>
       </CardActions>

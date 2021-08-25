@@ -1,21 +1,20 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../actions";
 
 const ProductDetails = () => {
   const products = useSelector((state: any) => state.products);
   const { id } = useParams<{ id: string }>();
 
-  // const currProduct = products[+id - 1];
+  const dispatch = useDispatch();
+
   const currProduct = products.find((product: any) => {
-    console.log(product);
     // eslint-disable-next-line eqeqeq
     return product.id == id;
   });
 
-  // console.log(id);
-  // console.log(currProduct);
   return (
     <div className="product-details d-flex justify-content-evenly ">
       <div>
@@ -27,7 +26,19 @@ const ProductDetails = () => {
         <h2>Price: ₹ {currProduct.price * 1000}</h2>
         <div>
           <button className="btn btn-outline-primary btn-lg ">Buy Now</button>
-          <button className="btn btn-outline-primary btn-lg ">
+          <button
+            className="btn btn-outline-primary btn-lg "
+            onClick={() => {
+              dispatch(
+                addToCart({
+                  id: currProduct.id,
+                  title: currProduct.title,
+                  price: currProduct.price,
+                  image: currProduct.image,
+                })
+              );
+            }}
+          >
             Add to cart
           </button>
         </div>
